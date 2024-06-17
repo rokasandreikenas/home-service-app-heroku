@@ -1,7 +1,9 @@
 import { PROD } from "@/consts/environment";
 import axios, { AxiosError, AxiosRequestConfig } from "axios";
 
-const baseURL = PROD ? "PROD_LINK_TODO" : "http://localhost:3000/";
+const baseURL = PROD
+  ? "https://home-service-app-heroku-e3f44bc25426.herokuapp.com/"
+  : "http://localhost:3000/";
 
 const config: AxiosRequestConfig = {
   baseURL,
